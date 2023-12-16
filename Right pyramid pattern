@@ -29,3 +29,13 @@ int main()
 
     getch();
 }
+/*
+Input the row and cloum number: 4
+* 
+* * 
+* * * 
+* * * * 
+* * * 
+* * 
+* 
+*/
