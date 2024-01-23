@@ -1,0 +1,41 @@
+#include <iostream>
+using namespace std;
+
+__int128_t factN(int n)
+{
+    if (n == 0)
+    {
+        return 1;
+    }
+    return n * factN(n - 1);
+}
+
+__int128_t factR(int r)
+{
+    if (r == 0)
+    {
+        return 1;
+    }
+    return r * factR(r - 1);
+}
+
+__int128_t factP(int p)
+{
+    if (p == 0)
+    {
+        return 1;
+    }
+    return p * factP(p - 1);
+}
+
+int main()
+{
+    int n, r;
+    __int128_t comp;
+    cin >> n >> r;
+
+    comp = factN(n) / (factR(r) * factP(n - r));
+
+    cout << comp << endl;
+    return 0;
+}
